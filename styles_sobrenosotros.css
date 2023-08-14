@@ -1,0 +1,191 @@
+/*-------------Barra de Navegacion-----------*/
+
+#BarradeNavegacion{
+    background-color: #3e4451;
+    color: rgb(240, 248, 255);
+    margin: 0;
+}
+#LogoImagen{
+    margin-right: 390px;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    #LogoImagen{
+        margin-right: 100px;
+        margin-left: 50px; /* Cambio el padding en pantallas de 768px o menos */
+    }
+}
+
+.linea{
+    background-color: #f0757f;
+    height: 2px;
+    position: relative;
+}
+.linea2{
+    background-color: #f6c2ab;
+    height: 3px;
+    position: relative;
+    margin-top: 110px;
+}
+#TextoBarra{
+    color: #fefefe;
+    font-size: 18px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+#TextoBarra:hover{
+    /* text-shadow: 2px 2px 4px rgba(238, 87, 0, 0.5); */
+    color: #f6c2ab;
+    border-bottom: 1px solid #f0757f;
+    transition: all 0.2s linear;
+}
+
+
+#TijeraDerecha{
+  width: 20px;
+  padding-top: 12px;
+}
+#TijeraIzquierda{
+    width: 20px;
+    padding-top: 12px;
+    margin-left: 10px;
+  }
+
+
+/*-------------(sec 1)-----------*/
+
+.Titulos{
+    color: #3e4451;
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    border-bottom: 2px solid #f0757f;
+}
+.Titulos:hover{
+    text-shadow: 2px 2px 4px  #f3a298;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+#ImgSec1{
+   border: 2px solid  #f6c2ab;
+}
+#TextoSec1{
+    padding-top: 30px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #3e4451;
+    font-weight: 600;
+    font-size: 18px;
+}
+/*-------------(sec 2)-----------*/
+#CardImagen{
+    border-bottom:#f3a298 solid 4px ;
+    padding: 2px 2px 0 2px;
+}
+
+@media (max-width: 768px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    .tarjetacontenedora{
+        column-gap: normal;/* Cambio el padding en pantallas de 768px o menos */
+    }
+}
+
+.card:hover{
+    box-shadow: 2px 2px 0 2px #474141ef;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+#titulo_s2{
+    color: #f1c2ae;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+#texto_s2{
+    color: #e2e0e0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+/*-------------(sec 3)-----------*/
+
+
+h6{
+    padding-bottom: 18px;
+    padding-top: 5px;
+    color: #3e4451;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    cursor: default;
+
+}
+
+#TextoIconos{
+    font-family: 'Open Sans', sans-serif;
+    color: #3e4451;
+    font-weight: 600;
+    padding-bottom: 27px;
+    border-bottom: 1px solid #f3a298;
+    cursor: default;
+}
+
+/*-------------- Footer -----------------*/
+#Footer{
+    background-color: #3e4451;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: #f1c2ae solid 4px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+#TituloFooter{
+    font-family: 'Playfair Display', serif;
+    color: #f1c2ae;
+    cursor: default;
+    font-size: 21px;
+}
+
+#TextoFooter{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    color: #e2e0e0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#enlaces{
+    cursor: pointer;
+    border-bottom: #f1c2ae57 1px solid;
+}
+#enlaces:hover{
+    color: #f3a298;
+    transition: all 0.3s ease;
+}
+
+#IconosRedes{
+    width: 28px;
+    filter: brightness(45%);
+    fill: #e2e0e0;
+    cursor: pointer;
+}
+
+#IconosRedes:hover{
+    filter: brightness(100%);
+    transition: all 0.3s linear;
+}
+
+#Copyright{
+    color: #c0c0c0;
+    padding-top: 40px;
+    font-style: italic;
+    cursor: default;
+    
+}

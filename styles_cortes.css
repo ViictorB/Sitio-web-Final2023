@@ -1,0 +1,299 @@
+/*-------------Barra de Navegacion-----------*/
+
+#BarradeNavegacion{
+    background-color: #3e4451;
+    color: rgb(240, 248, 255);
+    margin: 0;
+}
+#LogoImagen{
+    margin-right: 390px;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    #LogoImagen{
+        margin-right: 100px;
+        margin-left: 50px; /* Cambio el padding en pantallas de 768px o menos */
+    }
+}
+
+.linea{
+    background-color: #f0757f;
+    height: 2px;
+    position: relative;
+}
+.linea2{
+    background-color: #f6c2ab;
+    height: 3px;
+    position: relative;
+    margin-top: 110px;
+}
+#TextoBarra{
+    color: #fefefe;
+    font-size: 18px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+#TextoBarra:hover{
+    /* text-shadow: 2px 2px 4px rgba(238, 87, 0, 0.5); */
+    color: #f6c2ab;
+    border-bottom: 1px solid #f0757f;
+    transition: all 0.2s linear;
+}
+
+#TijeraDerecha{
+  width: 20px;
+  padding-top: 12px;
+}
+#TijeraIzquierda{
+    width: 20px;
+    padding-top: 12px;
+    margin-left: 10px;
+  }
+
+/* ---------Primera seccion-------- */
+
+#TituloPrincipal{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #f3a298; 
+}
+
+#tarjeta1{
+ background-color: #3e4451;
+ margin-left: auto;
+ padding: 0;
+ border: #f6c2ab 3px solid;
+}
+@media (max-width: 768px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    #tarjeta1{
+        width: 230px;
+    }
+}
+#tarjeta1:hover{
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.555);
+    transition: all 0.2s linear;
+}
+
+
+#tarjeta2{
+    background-color: #3e4451;
+    margin-right: auto;
+    padding: 0;
+    border: #f6c2ab 3px solid;
+}
+@media (max-width: 768px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    #tarjeta2{
+        width: 230px;
+    }
+}
+#tarjeta2:hover{
+    box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.555);
+    transition: all 0.2s linear;
+}
+
+
+#TitulosCards{
+    color:#f1c2ae;
+    font-family: 'Playfair Display', serif;
+    cursor: default;
+}
+#TextoCards{
+    color: #e2e0e0;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 15px;
+    font-weight: 500;
+    cursor: default;
+}
+
+/*-------------- Seccion 2-----------------*/
+#Seccion2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#ContenedorImagenes{
+    width: 69%;
+    background-color: #c5c5c5; 
+    border:0;
+    padding-left: 180px;
+}
+@media (max-width: 750px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    #ContenedorImagenes{
+        padding-left: 80px;
+        height: 70px;
+        width: 90%;
+    }
+}
+
+
+.carrusel_imagenes{
+  object-fit: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  border: #f3a298 2px solid;
+}
+
+
+#SubtituloSeccion2{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #f3a298; 
+    margin-bottom: 40px;
+}
+
+#iconoMinitituloDer{
+    width: 30px;
+    transform: scaleX(-1); /*Invertir horizontalmente una imagen*/
+}
+
+#iconoMinitituloIzq{
+    width: 30px;
+}
+
+#MiniTitulo{
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 58px;
+}
+#Boton{
+    background-image: url("Iconos/menu.png");
+    background-size: 50px 50px; /* Ajusta el tamaño del icono */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+    height: 50px;
+    border-radius:700px;
+    margin: 0;
+    padding: 0;
+    border: transparent;
+    filter: brightness(40%);
+}
+#Boton:hover{
+    filter: brightness(100%);
+    transition: all 0.2s linear;
+}
+
+.collapse-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 50px;
+    display: none; /* Ocultar el texto por defecto */
+  }
+  
+  @media (max-width: 800px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    .collapse-text{
+        font-size: 16px;
+    }
+}
+  /* Mostrar el texto adicional cuando el Collapse está oculto */
+  .collapse:not(.show) ~ .collapse-text {
+    display: block;
+  }
+
+#Ultimotexto{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    padding-top: 50px;
+    text-transform:lowercase;
+    font-style: italic;
+}
+  
+/*Ultima mini seccion*/
+#descripcion{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #282c35;
+    font-size: 18px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 4px #f3a298; 
+}
+
+#BotonEnlace{
+    background-color: #1a1d22;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    padding: 4px 16px;
+    border: 2px dashed;
+    border-color: #e2e0e0;
+    border-radius: 5%;
+}
+#BotonEnlace:hover{
+    background-color: #3e4451;
+    transition: all 0.2s linear;
+}
+#enlace{
+    color: #e2e0e0;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+
+/*-------------- Footer -----------------*/
+#Footer{
+    background-color: #3e4451;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: #f1c2ae solid 4px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+#TituloFooter{
+    font-family: 'Playfair Display', serif;
+    color: #f1c2ae;
+    cursor: default;
+    font-size: 21px;
+}
+
+#TextoFooter{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    color: #e2e0e0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#enlaces{
+    cursor: pointer;
+    border-bottom: #f1c2ae57 1px solid;
+}
+#enlaces:hover{
+    color: #f3a298;
+    transition: all 0.3s ease;
+}
+
+#IconosRedes{
+    width: 28px;
+    filter: brightness(45%);
+    fill: #e2e0e0;
+    cursor: pointer;
+}
+
+#IconosRedes:hover{
+    filter: brightness(100%);
+    transition: all 0.3s linear;
+}
+
+#Copyright{
+    color: #c0c0c0;
+    padding-top: 40px;
+    font-style: italic;
+    cursor: default;
+    
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberShopSj</title>
+  <link rel="icon" href="img/LogoOficialSinFondo.png"> 
+  <link rel="stylesheet" href="styles_reserva.css">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> <!--Fuente n1-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--Fuente n2-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid fixed-top " id="BarradeNavegacion">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/LogoOficialSinFondo.png" width="100px" alt="" srcset="" id="LogoImagen">
+      </a>
+      <button class="navbar-toggler" style="margin-right: 30px;  background:  #f0757f " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="padding-right: 30px;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0  justify-content-center">
+          <li><span><img src="iconos/TijeraDer.png" alt="" srcset="" id="TijeraDerecha"></span></li>
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="index.html" id="TextoBarra">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cortes.html" id="TextoBarra">Cortes </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="TextoBarra">Reservar Turno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobreNosotros.html" id="TextoBarra" style="margin-right: 0;">Sobre Nosotros</a>
+          </li>
+          <li><span><img src="iconos/TijeraIzq.png" alt="" srcset="" id="TijeraIzquierda"></span></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="linea fixed-top"></div>
+  <div class="linea2 fixed-top"></div>
+
+  <!--Titulo-->
+  <div  id="contenedorInicial">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12" style="text-align: center; margin-bottom:20px" >
+          <p id="TituloPrincipal">Realiza tu reserva</p>
+          
+          <form class="row g-3" style="margin-bottom: 50px;">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label outline-none" id="TextoFormulario">Nombre</label>
+              <input type="text" class="form-control" id="BotForm1" autocomplete="off">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label" id="TextoFormulario">Apellido</label>
+              <input type="tel" class="form-control" id="BotForm2" style="outline: none;" autocomplete="off" >
+            </div>
+            <div class="col-md-7">
+              <label for="inputAddress" class="form-label" id="TextoFormulario">Numero de Telefono</label >
+              <input type="tel" class="form-control" id="BotForm3" autocomplete="off">
+            </div>
+            <div class="col-md-5">
+              <label for="inputAddress2" class="form-label" id="TextoFormulario" autocomplete="off">Seleccione Dia y Horario</label>
+              <input type="datetime-local" class="form-control" id="BotForm4" style="color:#e092889d; text-align:center;">
+            </div>
+            <div class="col-md-12" style="margin-bottom: 30px; margin-top:30px">
+              <label for="formFile" class="form-label" id="TextoFormulario" style="padding-bottom: 15px;">Si desea realizarse un corte en especifíco inserte aqui la imagen:</label>
+              <input class="form-control" type="file" id="BotForm5">
+            </div>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="BotonEnviar">
+              Enviar
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content" id="ContenedorModal">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-4" id="exampleModalLabel" style="color: #f1c2ae;"><span><img src="img/LogoOficialSinFondo.png" alt="" srcset="" id="imagenLogoModal"></span>Confirmacion de Datos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body" id="TextoModal">
+                    Verifique sus datos que sean correctos antes de confirmar, y recuerde que su reserva será considerada válida si se envía al menos 24 horas antes del turno elegido. Esto nos permitirá prepararnos adecuadamente para su visita y asegurar la mejor experiencia posible. Muchas Gracias!
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                      <button type="submit" class="btn btn-primary" id="Boton">Enviar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!--Pie de pagina-->
+
+    <div id="Footer">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-2">
+            <img src="img/LogoOficialSinFondo.png" alt="" width="60px">
+          </div>
+          <div class="col-4" id="TituloFooter">
+            <p>Horarios de Atencion</p>
+          </div>
+          <div class="col-4"id="TituloFooter">
+            <p>¿Necesitas Ayuda?</p>
+          </div>
+          <div class="col-2"id="TituloFooter">
+            <p>Redes</p>
+          </div>
+       </div>
+
+       <div class="row">
+         <div class="col-2"></div>
+         <div class="col-4">
+           <ul id="TextoFooter">
+             <li>Lunes a Viernes: 10:00 - 23:00</li>
+             <li>Sabado: 11:00 - 00:00</li>
+             <li>Domingo: 18:00 - 21:00</li>
+           </ul>
+         </div>
+         <div class="col-4">
+          <ul id="TextoFooter">
+            <li><a id="enlaces">Como Reservar mi turno</a></li>
+            <li><a id="enlaces">Como Cancelar mi turno</a></li>
+            <li><a id="enlaces">Preguntas Frecuentes</a></li>
+            <li><a id="enlaces">Sobre el sitio web</a></li>
+          </ul>
+         </div>
+         <div class="col-2" id="TextoFooter">
+          <span><img src="iconos/whatsapp.png" alt="" srcset="" id="IconosRedes"></span>
+          <span><img src="iconos/instagram.png" alt="" srcset="" id="IconosRedes"></span>
+          <span><img src="iconos/tiktok.png" alt="" srcset="" id="IconosRedes"></span>
+         </div>
+       </div>
+
+       <div class="row">
+        <p id="Copyright">&copy; BarberShopSj - 2023. Todos los derechos reservados.</p>
+       </div>
+
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

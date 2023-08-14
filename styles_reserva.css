@@ -1,0 +1,201 @@
+/*-------------Barra de Navegacion-----------*/
+
+#BarradeNavegacion{
+    background-color: #3e4451;
+    color: rgb(240, 248, 255);
+    margin: 0;
+}
+#LogoImagen{
+    margin-right: 390px;
+    margin-left: 50px;
+}
+
+@media (max-width: 768px) { /*Sirve para cambiar el padding de acuerdo al tamaño de pantalla*/
+    #LogoImagen{
+        margin-right: 100px;
+        margin-left: 50px; /* Cambio el padding en pantallas de 768px o menos */
+    }
+}
+
+.linea{
+    background-color: #f0757f;
+    height: 2px;
+    position: relative;
+}
+.linea2{
+    background-color: #f6c2ab;
+    height: 3px;
+    position: relative;
+    margin-top: 110px;
+}
+#TextoBarra{
+    color: #fefefe;
+    font-size: 18px;
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'Playfair Display', serif;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+#TextoBarra:hover{
+    /* text-shadow: 2px 2px 4px rgba(238, 87, 0, 0.5); */
+    color: #f6c2ab;
+    border-bottom: 1px solid #f0757f;
+    transition: all 0.2s linear;
+}
+
+#TijeraDerecha{
+  width: 20px;
+  padding-top: 12px;
+}
+#TijeraIzquierda{
+    width: 20px;
+    padding-top: 12px;
+    margin-left: 10px;
+  }
+
+/* ---------SeccionUnica1-------- */
+#contenedorInicial{
+    background-image: url(Img/fondoeditado2.png);
+    background-repeat: no-repeat;
+    background-size: cover;           /*para que cubra todo el ancho del contenedor*/
+    background-position:left 50%;    /*para mover la imagen*/
+    background-attachment: fixed; /*para que la imagen no se mueva cuando se hago scroll*/
+}
+
+
+#TituloPrincipal{
+    padding-top: 170px;
+    margin-bottom: 50px;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #f39e93; 
+    text-align: center;
+    color: #e2e0e0;
+    border-bottom:#f1c2ae 3px solid;
+    cursor: default;
+}
+#TituloPrincipal:placeholder{
+  color: #e09288;
+}
+#TextoFormulario{
+    color: #e2e0e0;
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 500;
+    text-shadow: 1px 1px 1px #e09288de; 
+    margin: 7px;
+}
+#BotForm1, #BotForm2, #BotForm3, #BotForm4,#BotForm5{
+    background-color: transparent;
+    border: transparent;
+    border-bottom: #f0757f solid 2px; 
+    border-radius: 1%;
+    color: #e2e0e0;
+    outline:none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    box-shadow: none;
+}
+#BotForm5{
+    box-shadow: 1px 1px 0 0px #f0757f81;
+}
+#BotForm1:hover, #BotForm2:hover,#BotForm3:hover,#BotForm4:hover,#BotForm5:hover{
+    box-shadow: 1px 1px 0 2px #f0757f81;
+    transition: all 0.2s linear;
+}
+#BotForm1:active, #BotForm2:active, #BotForm3:active,#BotForm4:active,#BotForm5:active{
+  background-color: transparent;
+}
+
+#BotonEnviar{
+    background-color:  #13151a;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    padding: 4px 16px;
+    border: 2px dashed;
+    border-color: #e2e0e0;
+    border-radius: 5%;
+}
+#BotonEnviar:hover{
+    background-color:  #0b0c0f;
+    box-shadow: 2px 2px 0 2px #29222381;
+    transition: all 0.2s linear;
+}
+
+
+/*-------------- Modal---------------*/
+#ContenedorModal{
+    background-color: #3e4451;
+    text-align: center;
+    border:#f1c2ae 1px solid; 
+    border-bottom: 0;
+}
+#imagenLogoModal{
+    padding: 10px;
+    width: 85px;
+}
+
+#TextoModal{
+    color: #c0c0c0;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+/*-------------- Footer -----------------*/
+#Footer{
+    background-color: #3e4451;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: #f1c2ae solid 4px;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+#TituloFooter{
+    font-family: 'Playfair Display', serif;
+    color: #f1c2ae;
+    cursor: default;
+    font-size: 21px;
+}
+
+#TextoFooter{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: default;
+    color: #e2e0e0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+#enlaces{
+    cursor: pointer;
+    border-bottom: #f1c2ae57 1px solid;
+}
+#enlaces:hover{
+    color: #f3a298;
+    transition: all 0.3s ease;
+}
+
+#IconosRedes{
+    width: 28px;
+    filter: brightness(45%);
+    fill: #e2e0e0;
+    cursor: pointer;
+}
+
+#IconosRedes:hover{
+    filter: brightness(100%);
+    transition: all 0.3s linear;
+}
+
+#Copyright{
+    color: #c0c0c0;
+    padding-top: 40px;
+    font-style: italic;
+    cursor: default;
+    
+}

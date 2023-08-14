@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BarberShopSj</title>
+  <link rel="icon" href="img/LogoOficialSinFondo.png"> 
+  <link rel="stylesheet" href="styles_cortes.css">
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> <!--Fuente n1-->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  <!--Fuente n2-->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!--Barra de navegacion-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid fixed-top " id="BarradeNavegacion">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/LogoOficialSinFondo.png" width="100px" alt="" srcset="" id="LogoImagen">
+      </a>
+      <button class="navbar-toggler" style="margin-right: 30px;  background:  #f0757f " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="padding-right: 30px;"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0  justify-content-center">
+          <li><span><img src="iconos/TijeraDer.png" alt="" srcset="" id="TijeraDerecha"></span></li>
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="index.html" id="TextoBarra">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="TextoBarra">Cortes </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Reserva.html" id="TextoBarra">Reservar Turno</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobreNosotros.html" id="TextoBarra" style="margin-right: 0;">Sobre Nosotros</a>
+          </li>
+          <li><span><img src="iconos/TijeraIzq.png" alt="" srcset="" id="TijeraIzquierda"></span></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="linea fixed-top"></div>
+  <div class="linea2 fixed-top"></div>
+
+  <!--Titulo-->
+  <div  style="margin-top: 150px; text-align:center;">
+    <div class="container">
+      
+      <p id="TituloPrincipal">Descubre nuestra variedad de cortes para un look único</p>
+      <div class="row" style="padding-bottom: 18px;">
+        <div class="col-5"><hr class="border border-danger border-1"></div>
+        <div class="col-2"><p><img src="img/cortes/tijeras-y-peine.png" alt="" ></p></div>
+        <div class="col-5"><hr class="border border-danger border-1"></div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 648px;" id="tarjeta2">
+        <div class="row g-10">
+          <div class="col-md-4">
+            <img src="img/cortes/pintado.png" class="img-fluid " alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title" id="TitulosCards">Tinturas de cabello a su gusto</h4>
+              <p class="card-text" id="TextoCards">Un servicio para aquellos clientes que deseen un estilo único, seleccionando el tono de color que mejor se adapte a sus preferencias, utilizando productos de alta calidad para un resultado brillante y duradero.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 648px;" id="tarjeta1">
+        <div class="row g-10">
+          <div class="col-md-4">
+            <img src="img/cortes/diseños.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title"id="TitulosCards">Cortes Personalizados</h4>
+              <p class="card-text" id="TextoCards">Nuestros expertos en el arte crean diseños para reflejar tu estilo ya sea que busques líneas definidas, formas geométricas o diseños más elaborados, estamos aquí para convertir tu visión en realidad</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 648px;" id="tarjeta2">
+        <div class="row g-10">
+          <div class="col-md-4">
+            <img src="img/cortes/barba.png" class="img-fluid " alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title" id="TitulosCards">Arreglo y perfilado de barba</h4>
+              <p class="card-text" id="TextoCards">Te brindaremos un servicio personalizado y te asesoraremos sobre los estilos más adecuados según la forma de tu rostro y el tipo de barba que desees lograr para resaltar tu masculinidad y tu look</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" style="max-width: 648px;" id="tarjeta1">
+        <div class="row g-10">
+          <div class="col-md-4">
+            <img src="img/cortes/lineas.png" class="img-fluid" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4 class="card-title" id="TitulosCards">Lineas y franjas a tu corte</h4>
+              <p class="card-text" id="TextoCards">Añadimos a tu corte lineas y/o franjas adicionales de diferentes tamaños realizadas con el buen manejo de maquina y navaja de nuestros barberos con un cuidado único</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!--Seccion 2(cortes)-->  
+<div style="background-color: #c5c5c5;">
+  <div class="container" id="Seccion2">
+    <div class="row" style="text-align: center; padding-top:50px">
+      <div class="col-4 d-none d-md-block"><hr class="border border-danger border-1"></div>
+      <div class="col-12 col-md-4 col-lg-4" id="SubtituloSeccion2">Ejemplos de algunos cortes realizados en nuestra barberia</div>
+      <div class="col-4 d-none d-md-block"><hr class="border border-danger border-1"></div>
+    </div>
+
+<!--subseccion1-->
+    <div class="row">
+      <div class="col-5" style="padding-bottom:70px; border-right:#f0757f 2px solid;">
+        <p id="MiniTitulo">Trabajos con tintura <span><img src="iconos/Derecha.png" alt="" srcset="" id="iconoMinitituloIzq"></span></p>
+        <p>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1" id="Boton">
+           
+          </button>
+        </p>
+      </div>
+      <div class="col-7">
+        <div style="min-height: 120px;">
+          <div class="collapse collapse-horizontal" id="collapse1" style="margin-right: 0;">
+            <div class="card card-body" id="ContenedorImagenes">
+            
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/cortes/tintura2.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/tintura3.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/tintura1.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/tintura4.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/tintura5.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/tintura6.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="collapse-text" id="collapseText">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut error dolor eum praesentium ipsam minima sunt consequuntur ullam consequatur, nam et eos culpa, accusantium, rerum quasi voluptatem. Nihil, corporis aliquam.
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 20px;"></div>
+    <!--subseccion2-->
+    <div class="row">
+      <div class="col-5 order-last" style="padding-bottom:70px; border-left:#f0757f 2px solid;">
+        <p id="MiniTitulo"><span><img src="iconos/Derecha.png" alt="" srcset="" id="iconoMinitituloDer"></span>Trabajos Personalizados</p>
+        <p>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2" id="Boton">
+           
+          </button>
+        </p>
+      </div>
+      <div class="col-7">
+        <div style="min-height: 120px;">
+          <div class="collapse show collapse-horizontal" id="collapse2" style="margin-right: 0;">
+            <div class="card card-body" id="ContenedorImagenes">
+            
+              <div id="carouselExampleIndicators2" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/cortes/personalizados2.png" class="d-block w-100 carrusel_imagenes" alt="..." s>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/personalizados5.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/personalizados3.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/personalizados4.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/personalizados1.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="collapse-text" id="collapseText">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut error dolor eum praesentium ipsam minima sunt consequuntur ullam consequatur, nam et eos culpa, accusantium, rerum quasi voluptatem. Nihil, corporis aliquam.
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px;"></div>
+    <!--subseccion3-->
+    <div class="row">
+      <div class="col-5
+      " style="padding-bottom:70px; border-right:#f0757f 2px solid;">
+        <p id="MiniTitulo">Trabajos de barba<span><img src="iconos/Derecha.png" alt="" srcset="" id="iconoMinitituloIzq"></span></p>
+        <p>
+          <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3" id="Boton">
+           
+          </button>
+        </p>
+      </div>
+      <div class="col-7">
+        <div style="min-height: 120px;">
+          <div class="collapse show collapse-horizontal" id="collapse3" style="margin-right: 0;">
+            <div class="card card-body" id="ContenedorImagenes">
+            
+              <div id="carouselExampleIndicators3" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/cortes/barbas1.png" class="d-block w-100 carrusel_imagenes" alt="..." s>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/barbas2.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/barbas3.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/barbas4.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/barbas5.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/cortes/barbas6.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="collapse-text" id="collapseText">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut error dolor eum praesentium ipsam minima sunt consequuntur ullam consequatur, nam et eos culpa, accusantium, rerum quasi voluptatem. Nihil, corporis aliquam.
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px;"></div>
+        <!--subseccion4-->
+        <div class="row">
+          <div class="col-5 order-last" style="padding-bottom:70px; border-left:#f0757f 2px solid;">
+            <p id="MiniTitulo"><span><img src="iconos/Derecha.png" alt="" srcset="" id="iconoMinitituloDer"></span>Trabajos con lineas/franjas</p>
+            <p>
+              <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4" id="Boton">
+               
+              </button>
+            </p>
+          </div>
+          <div class="col-7">
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="collapse4" style="margin-right: 0;">
+                <div class="card card-body" id="ContenedorImagenes">
+                
+                  <div id="carouselExampleIndicators4" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/cortes/lineas3.png" class="d-block w-100 carrusel_imagenes" alt="..." s>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/cortes/lineas2.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/cortes/lineas4.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/cortes/lineas1.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/cortes/lineas5.png" class="d-block w-100 carrusel_imagenes" alt="...">
+                      </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+                </div>
+              </div>
+    
+              <div class="collapse-text" id="collapseText">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut error dolor eum praesentium ipsam minima sunt consequuntur ullam consequatur, nam et eos culpa, accusantium, rerum quasi voluptatem. Nihil, corporis aliquam.
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+    <div class="row"id="Ultimotexto">
+      <div class="col-12">
+        <p>Y muchos cortes más...</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="padding-bottom: 5px;"></div>
+
+</div>
+
+<!--Ultima Seccion-->
+<div style="background-color: #ffffff; padding-top:50px;"></div>
+<div class="container" style="margin-bottom:40px; text-align:center">
+  <div class="row">
+    <div class="col-6" id="descripcion">Si quieres conocer nuestros precios:</div>
+    <div class="col-6" id="descripcion">O si quieres reservar un turno:</div>
+</div>
+<div class="row">
+  <div class="col-6"><button id="BotonEnlace"><a href="index.html#Precios_unicos" id="enlace">Click aquí</a></button></div>
+  <div class="col-6"><button id="BotonEnlace"><a href="Reserva.html" id="enlace">Click aquí</a></button></div>
+</div>
+</div>
+
+<!--Pie de pagina-->
+
+    <div id="Footer">
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-2">
+            <img src="img/LogoOficialSinFondo.png" alt="" width="60px">
+          </div>
+          <div class="col-4" id="TituloFooter">
+            <p>Horarios de Atencion</p>
+          </div>
+          <div class="col-4"id="TituloFooter">
+            <p>¿Necesitas Ayuda?</p>
+          </div>
+          <div class="col-2"id="TituloFooter">
+            <p>Redes</p>
+          </div>
+       </div>
+
+       <div class="row">
+         <div class="col-2"></div>
+         <div class="col-4">
+           <ul id="TextoFooter">
+             <li>Lunes a Viernes: 10:00 - 23:00</li>
+             <li>Sabado: 11:00 - 00:00</li>
+             <li>Domingo: 18:00 - 21:00</li>
+           </ul>
+         </div>
+         <div class="col-4">
+          <ul id="TextoFooter">
+            <li><a id="enlaces">Como Reservar mi turno</a></li>
+            <li><a id="enlaces">Como Cancelar mi turno</a></li>
+            <li><a id="enlaces">Preguntas Frecuentes</a></li>
+            <li><a id="enlaces">Sobre el sitio web</a></li>
+          </ul>
+         </div>
+         <div class="col-2" id="TextoFooter">
+          <span><img src="iconos/whatsapp.png" alt="" srcset="" id="IconosRedes"></span>
+          <span><img src="iconos/instagram.png" alt="" srcset="" id="IconosRedes"></span>
+          <span><img src="iconos/tiktok.png" alt="" srcset="" id="IconosRedes"></span>
+         </div>
+       </div>
+
+       <div class="row">
+        <p id="Copyright">&copy; BarberShopSj - 2023. Todos los derechos reservados.</p>
+       </div>
+
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
